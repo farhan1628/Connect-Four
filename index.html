@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect four</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="frame" id="frame">
+        <button class="key" id="1" onclick="changecolor(1)"></button>
+        <button class="key" id="2" onclick="changecolor(2)"></button>
+        <button class="key" id="3" onclick="changecolor(3)"></button>
+        <button class="key" id="4" onclick="changecolor(4)"></button>
+        <button class="key" id="5" onclick="changecolor(5)"></button>
+        <button class="key" id="6" onclick="changecolor(6)"></button>
+        <button class="key" id="7" onclick="changecolor(7)"></button>
+        <button class="key" id="8" onclick="changecolor(8)"></button>
+        <button class="key" id="9" onclick="changecolor(9)"></button>
+        <button class="key" id="10" onclick="changecolor(10)"></button>
+        <button class="key" id="11" onclick="changecolor(11)"></button>
+        <button class="key" id="12" onclick="changecolor(12)"></button>
+        <button class="key" id="13" onclick="changecolor(13)"></button>
+        <button class="key" id="14" onclick="changecolor(14)"></button>
+        <button class="key" id="15" onclick="changecolor(15)"></button>
+        <button class="key" id="16" onclick="changecolor(16)"></button>
+        <button class="key" id="17" onclick="changecolor(17)"></button>
+        <button class="key" id="18" onclick="changecolor(18)"></button>
+        <button class="key" id="19" onclick="changecolor(19)"></button>
+        <button class="key" id="20" onclick="changecolor(20)"></button>
+        <button class="key" id="21" onclick="changecolor(21)"></button>
+        <button class="key" id="22" onclick="changecolor(22)"></button>
+        <button class="key" id="23" onclick="changecolor(23)"></button>
+        <button class="key" id="24" onclick="changecolor(24)"></button>
+        <button class="key" id="25" onclick="changecolor(25)"></button>
+        <button class="key" id="26" onclick="changecolor(26)"></button>
+        <button class="key" id="27" onclick="changecolor(27)"></button>
+        <button class="key" id="28" onclick="changecolor(28)"></button>
+        <button class="key" id="29" onclick="changecolor(29)"></button>
+        <button class="key" id="30" onclick="changecolor(30)"></button>
+        <button class="key" id="31" onclick="changecolor(31)"></button>
+        <button class="key" id="32" onclick="changecolor(32)"></button>
+        <button class="key" id="33" onclick="changecolor(33)"></button>
+        <button class="key" id="34" onclick="changecolor(34)"></button>
+        <button class="key" id="35" onclick="changecolor(35)"></button>
+        <button class="key" id="36" onclick="changecolor(36)"></button>
+        <button class="key" id="37" onclick="changecolor(37)"></button>
+        <button class="key" id="38" onclick="changecolor(38)"></button>
+        <button class="key" id="39" onclick="changecolor(39)"></button>
+        <button class="key" id="40" onclick="changecolor(40)"></button>
+        <button class="key" id="41" onclick="changecolor(41)"></button>
+        <button class="key" id="42" onclick="changecolor(42)"></button>
+        
+        
+        
+    </div>
+    <div class="stats">
+        <h2>Player one <span><button class="yellow"></button></span></h2>
+        <h3>Wins: <span id="wins1">0</span></h3>
+        <h3>Losses: <span id="losses1">0</span></span></h3>
+        <h3>Draw: <span  id="draw1">0</span></h3>
+        <br>
+        
+        <hr>
+        <br>
+        <h2>Player two <span><button class="red"></button></span></h2>
+        <h3 >Wins: <span id="wins2">0</span></h3>
+        <h3 >Losses: <span id="losses2">0</span></h3>
+        <h3 >Draw:<span id="draw2">0</span></h3>
+        <br>
+        <hr>
+        <br>
+        <div style="display: flex;gap: 5px;">
+            <button class="clear" onclick="clearboard()">Clear Board</button>
+            <button class="draw" onclick="draw()">Draw</button>
+        </div>
+            
+        
+        
+    </div>
+    <center>
+        <div class="winnerbox" id="winnerbox">
+            
+            <center>
+                <h1 class="congrats">Congratulations!</h1>
+                <h1 id="winningh1"><span id="winningcolor"></span> Wins!</h1>
+                <img src="https://bestanimations.com/media/fireworks/671801409ba-awesome-coloful-fireworks-animated-gif-image-3.gif" alt=""><br><br>
+                <button class="hide" onclick="hide()">Hide</button>
+            </center>
+        </div>
+    </center>
+    <script src="script.js"></script>
+</body>
+</html>
